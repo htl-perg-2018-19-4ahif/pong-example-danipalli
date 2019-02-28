@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="hammer.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="paddle.js"></script>
+        <script src="socketio.js"></script>
+    </head>
+
+    <body>
+        <div class="login page" style="text-align:center">
+            <h1 class="title">Login</h1><br>
+            <input class="usernameInput" type="text" maxlength="14" placeholder="Enter your username ..."/>
+        </div>
+
+        <div class="start page" style="text-align:center">
+            
+            <table>
+                <tr>
+                    <th colspan="4">
+                        <h1>Welcome to Pong</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 class="playername"></h3>
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+
+                <tr>
+                    <td><h3>Won:</h3></td><td class="center"><h3 class="won">0</h3></td>
+                    <td><h3>Lost:</h3></td><td class="center"><h3 class="lost">0</h3></td>
+                </tr>
+                <tr><td colspan="4"><br><br></td> </tr>
+                <tr><td colspan="4"><br><br></td> </tr>
+                <tr>
+                    <td colspan="2"><h3>Rounds: </h3></td>
+                    <td colspan="2"><input class="gameRounds" type="number" min="1" max="100" default="1" style="text-align: right"/></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button class="button" type="button">START</button></td>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div class="pong gameboard">
+            <div id="ball"></div>
+            <div class="paddleLeft"></div>
+            <div class="paddleRight"></div>
+            <div id="pointsLeft">0</div>
+            <div id="pointsRight">0</div>
+            <ul id='keys'></ul>
+        </div>
+
+        <div class="gameover" style="text-align:center">
+            <h1 class="title">Game Over</h1><br>
+            <button class="return" type="button">Return to Main Page</button>
+        </div>
+
+        <div class="victory" style="text-align:center">
+            <h1 class="title">Victory</h1><br>
+            <button class="return" type="button">Return to Main Page</button>
+        </div>
+        
+    </body>
+
+    </html>

@@ -1,0 +1,109 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h3 {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.reset {
+    width: 50%;
+    background-color: #8c8c8c;
+}
+
+#ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+.paddleLeft {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: red;
+    left: 50px;
+}
+.paddleRight {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: blue;
+    right: 50px;
+}
+#pointsRight {
+    position: absolute;
+    right: 150px;
+    color:white;
+    width: 100px;
+    height: 100px;
+}
+#pointsLeft {
+    position: absolute;
+    left: 150px;
+    color:white;
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    border-collapse: separate;
+    border: 20px solid grey;
+    border-spacing: 25px 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+    width: 25%;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    text-align: center;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
